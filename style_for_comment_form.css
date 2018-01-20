@@ -1,0 +1,118 @@
+.form_box{
+    padding: 20px;
+    background-color: lawngreen;
+    width: 700px;
+    border-radius: 10px;
+    margin-left: 450px;
+}
+.form_field{
+    margin: 10px 90px;
+    width: 400px;
+    padding:  10px 60px;
+    border-radius: 10px;
+    border: 3px solid lawngreen;
+    background-color: white;
+}
+.form_name{
+    margin: 10px 35px;
+    width: 250px;
+    height: 30px;
+    align-items: center;
+}
+
+.username_line{
+    border: 2px solid lawngreen;
+    border-radius: 7px;
+    width: 305px;
+    height: 22px;
+    text-align: center;
+
+}
+.comments_field{
+    padding: 10px;
+    margin: 20px 90px;
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.comments_name{
+    margin: 10px 35px;
+}
+
+.comment_line{
+    border: 2px solid lawngreen;
+    border-radius: 7px;
+    text-align: center;
+    align-content: center;
+}
+
+body, input, textarea{
+    font-family: "Adobe Hebrew";
+    font-size: 12px;
+}
+
+.button_name{
+    margin: 10px 35px;
+}
+
+.button_line{
+    width: 310px;
+    height: 30px;
+    border: 2px solid lawngreen;
+    border-radius: 7px;
+    color: aliceblue;
+    background-color: lawngreen;
+}
+
+.comments{
+    padding: 5px;
+    margin: 20px;
+    border: 2px solid lawngreen;
+    border-radius: 7px;
+    background-color: white;
+}
+.comments span{
+    color: gray;
+}
+
+
+
+
+
+/*
+<div class="form_box">
+    <div class="form">
+<form action="" method="post">
+        <div class="form_name">
+            <!--<label for id="username"><span>Your name:</span></label>-->
+            <input class="username_line" type="text" name="username" id="username" placeholder="Enter your name">
+        </div>
+        <div class="comments_name">
+            <!--<label for id="comment"><span>Your comments:</span></label>-->
+            <textarea class="comment_line" name="comment" id="comment" cols="40" rows="6" placeholder="Enter your comments"></textarea>
+        </div>
+        <div class="button_name">
+            <input class="button_line" type="submit" value="Submit">
+        </div>
+
+</form>
+</div>
+
+<div class="comments_field">
+
+    <?php foreach ($allComments as $comment){
+        echo '
+    <div class="comments">
+    <div class="username">
+             <span>Name:</span>' ." ".changeWards($comment['username']).'
+    </div>
+    <div class="comment">
+            <span>Comments:</span>' ." ".changeWards($comment['comment']).'
+    </div>
+     </div>';
+    }?>
+
+</div>
+</div>
+ */
